@@ -1,0 +1,10 @@
+É necessário fazer o download da SFML 1.6
+A estrutura de diretórios deverá ficar da seguinte forma:
+
+--/
+   -SFML-1.6
+   -Edda
+
+O projeto contido no Edda foi feito no Visual Studio C++ 2010 e já faz referencia para o SFML de forma relativa para que possa compilar.
+
+No momento só compila no modo Release.
