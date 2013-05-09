@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MidgardZombies", "MidgardZombies\MidgardZombies.vcxproj", "{508F9720-E142-4F30-8DBB-33C945558EC0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AFE879CA-124E-4896-9687-69476A7EABFA} = {AFE879CA-124E-4896-9687-69476A7EABFA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Edda", "Edda\Edda.vcxproj", "{AFE879CA-124E-4896-9687-69476A7EABFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{508F9720-E142-4F30-8DBB-33C945558EC0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{508F9720-E142-4F30-8DBB-33C945558EC0}.Debug|Win32.Build.0 = Debug|Win32
+		{508F9720-E142-4F30-8DBB-33C945558EC0}.Release|Win32.ActiveCfg = Release|Win32
+		{508F9720-E142-4F30-8DBB-33C945558EC0}.Release|Win32.Build.0 = Release|Win32
+		{AFE879CA-124E-4896-9687-69476A7EABFA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AFE879CA-124E-4896-9687-69476A7EABFA}.Debug|Win32.Build.0 = Debug|Win32
+		{AFE879CA-124E-4896-9687-69476A7EABFA}.Release|Win32.ActiveCfg = Release|Win32
+		{AFE879CA-124E-4896-9687-69476A7EABFA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,91 @@
+\hypertarget{class_edda_1_1_acao}{
+\section{Edda::Acao Class Reference}
+\label{class_edda_1_1_acao}\index{Edda::Acao@{Edda::Acao}}
+}
+
+
+Classe que descreve uma ação  
+
+
+
+
+{\ttfamily \#include $<$Acao.h$>$}
+
+Inheritance diagram for Edda::Acao:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.758389cm]{class_edda_1_1_acao}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_edda_1_1_acao_a65b7e5dd79178b1474b202a3c34bb340}{
+\hyperlink{class_edda_1_1_acao_a65b7e5dd79178b1474b202a3c34bb340}{Acao} ()}
+\label{class_edda_1_1_acao_a65b7e5dd79178b1474b202a3c34bb340}
+
+\begin{DoxyCompactList}\small\item\em Construtor padrão da ação \item\end{DoxyCompactList}\item 
+\hypertarget{class_edda_1_1_acao_a372da0e8437dc11d02d26965ee1a2c0e}{
+bool {\bfseries estaPronta} ()}
+\label{class_edda_1_1_acao_a372da0e8437dc11d02d26965ee1a2c0e}
+
+\item 
+\hypertarget{class_edda_1_1_acao_a574b6e99fed8c960b62db8c375dfce1f}{
+void {\bfseries parar} ()}
+\label{class_edda_1_1_acao_a574b6e99fed8c960b62db8c375dfce1f}
+
+\item 
+\hypertarget{class_edda_1_1_acao_a31087d435bac96dde1b6f8cd7a7057f9}{
+virtual void {\bfseries executar} (\hyperlink{class_edda_1_1_nodo}{Nodo} $\ast$)}
+\label{class_edda_1_1_acao_a31087d435bac96dde1b6f8cd7a7057f9}
+
+\item 
+\hypertarget{class_edda_1_1_acao_a40ba1c27d975f7837742a72c942f0962}{
+virtual void {\bfseries passo} (long dt)}
+\label{class_edda_1_1_acao_a40ba1c27d975f7837742a72c942f0962}
+
+\item 
+\hypertarget{class_edda_1_1_acao_ae79993cbcda669283f77f36135a4a0a0}{
+virtual void {\bfseries atualizar} (long)=0}
+\label{class_edda_1_1_acao_ae79993cbcda669283f77f36135a4a0a0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_edda_1_1_acao_a999ae2cf4c4b82ebdff8589e42f279a9}{tag}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_edda_1_1_nodo}{Nodo} $\ast$ \hyperlink{class_edda_1_1_acao_aae0c17808ed85e682bcc14f1a4065057}{alvo}
+\item 
+bool \hyperlink{class_edda_1_1_acao_a1f7eb7a2096978d8b66f31b8561e529a}{rodando}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que descreve uma ação Uma ação modifica o estado de um nodo no tempo 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_edda_1_1_acao_aae0c17808ed85e682bcc14f1a4065057}{
+\index{Edda::Acao@{Edda::Acao}!alvo@{alvo}}
+\index{alvo@{alvo}!Edda::Acao@{Edda::Acao}}
+\subsubsection[{alvo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nodo}$\ast$ {\bf Edda::Acao::alvo}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_edda_1_1_acao_aae0c17808ed85e682bcc14f1a4065057}
+nodo alvo da ação \hypertarget{class_edda_1_1_acao_a1f7eb7a2096978d8b66f31b8561e529a}{
+\index{Edda::Acao@{Edda::Acao}!rodando@{rodando}}
+\index{rodando@{rodando}!Edda::Acao@{Edda::Acao}}
+\subsubsection[{rodando}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Edda::Acao::rodando}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_edda_1_1_acao_a1f7eb7a2096978d8b66f31b8561e529a}
+se ação está executando \hypertarget{class_edda_1_1_acao_a999ae2cf4c4b82ebdff8589e42f279a9}{
+\index{Edda::Acao@{Edda::Acao}!tag@{tag}}
+\index{tag@{tag}!Edda::Acao@{Edda::Acao}}
+\subsubsection[{tag}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Edda::Acao::tag}}}
+\label{class_edda_1_1_acao_a999ae2cf4c4b82ebdff8589e42f279a9}
+id identifcador da ação 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Acao.h\item 
+Acao.cpp\end{DoxyCompactItemize}

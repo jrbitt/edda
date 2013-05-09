@@ -1,0 +1,155 @@
+\hypertarget{class_edda_1_1_nodo}{
+\section{Edda::Nodo Class Reference}
+\label{class_edda_1_1_nodo}\index{Edda::Nodo@{Edda::Nodo}}
+}
+Inheritance diagram for Edda::Nodo:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_edda_1_1_nodo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_edda_1_1_nodo_aedc6c999c03cc00e41beddec7c93dac3}{
+virtual void {\bfseries desenhar} (RenderWindow $\ast$)=0}
+\label{class_edda_1_1_nodo_aedc6c999c03cc00e41beddec7c93dac3}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a0f24efb7a6f9be8e45b4ef2656c1e382}{
+virtual void {\bfseries tratarEvento} (RenderWindow $\ast$)=0}
+\label{class_edda_1_1_nodo_a0f24efb7a6f9be8e45b4ef2656c1e382}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a6c6ac09aa6ecb67c846ab6cb969d1c6d}{
+void {\bfseries adicionar} (\hyperlink{class_edda_1_1_nodo}{Nodo} $\ast$n)}
+\label{class_edda_1_1_nodo_a6c6ac09aa6ecb67c846ab6cb969d1c6d}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a9364a90f623ae04ba4752c1bef85ccdd}{
+void {\bfseries remover} (\hyperlink{class_edda_1_1_nodo}{Nodo} $\ast$n)}
+\label{class_edda_1_1_nodo_a9364a90f623ae04ba4752c1bef85ccdd}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a63d456d79bea395f8205261f364d7b90}{
+\hyperlink{class_edda_1_1_nodo}{Nodo} $\ast$ {\bfseries pegarNodoPelaTag} (int tag)}
+\label{class_edda_1_1_nodo_a63d456d79bea395f8205261f364d7b90}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a8b37a33842de487cabcefe72cd4dd483}{
+void {\bfseries executar} ()}
+\label{class_edda_1_1_nodo_a8b37a33842de487cabcefe72cd4dd483}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_aecae42361dd3003dbae41b587161059b}{
+void {\bfseries adicionarAcao} (\hyperlink{class_edda_1_1_acao}{Acao} $\ast$)}
+\label{class_edda_1_1_nodo_aecae42361dd3003dbae41b587161059b}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a103bee6bcafc28294a1723423693cac4}{
+void {\bfseries pararAcao} (\hyperlink{class_edda_1_1_acao}{Acao} $\ast$)}
+\label{class_edda_1_1_nodo_a103bee6bcafc28294a1723423693cac4}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a6058d8141c5a29c0ffcbbae152c6721a}{
+void {\bfseries pararTodasAsAcoes} ()}
+\label{class_edda_1_1_nodo_a6058d8141c5a29c0ffcbbae152c6721a}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a7cb669ddee8c5af57feb32cde3d56365}{
+void {\bfseries passo} (long dt)}
+\label{class_edda_1_1_nodo_a7cb669ddee8c5af57feb32cde3d56365}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a19e69015b34fef77f76f750081f50337}{
+void {\bfseries atualizar} (long)}
+\label{class_edda_1_1_nodo_a19e69015b34fef77f76f750081f50337}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a49d44b8c95d098f8a67714550288eeb4}{
+bool {\bfseries estaRodando} ()}
+\label{class_edda_1_1_nodo_a49d44b8c95d098f8a67714550288eeb4}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a3606144afa063be3c1582242d156922b}{
+bool {\bfseries operator$<$=} (\hyperlink{class_edda_1_1_nodo}{Nodo} $\ast$b)}
+\label{class_edda_1_1_nodo_a3606144afa063be3c1582242d156922b}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a2df4d8114c0aee84372859f22eb1429f}{
+virtual void {\bfseries setPosicao} (int, int)}
+\label{class_edda_1_1_nodo_a2df4d8114c0aee84372859f22eb1429f}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_af1658726e2cdfdc29b90288aafae3e34}{
+int {\bfseries getX} ()}
+\label{class_edda_1_1_nodo_af1658726e2cdfdc29b90288aafae3e34}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a91a890f6106ff8bda3edaa4a1dd9f19d}{
+int {\bfseries getY} ()}
+\label{class_edda_1_1_nodo_a91a890f6106ff8bda3edaa4a1dd9f19d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_edda_1_1_nodo_ab64da13c954f000cefddc7f61b02ce33}{
+void $\ast$ {\bfseries dadosUsuario}}
+\label{class_edda_1_1_nodo_ab64da13c954f000cefddc7f61b02ce33}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_ab459829e56c07d11526bc1d1033f1576}{
+int {\bfseries tag}}
+\label{class_edda_1_1_nodo_ab459829e56c07d11526bc1d1033f1576}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a89d63b77493f24ad5e1aeb5e3d7f2cd0}{
+int {\bfseries largura}}
+\label{class_edda_1_1_nodo_a89d63b77493f24ad5e1aeb5e3d7f2cd0}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a22743b8f0b5b30513c7711dd5b431a1e}{
+int {\bfseries altura}}
+\label{class_edda_1_1_nodo_a22743b8f0b5b30513c7711dd5b431a1e}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a7e69594520d66e138146770a108c3032}{
+int {\bfseries zorder}}
+\label{class_edda_1_1_nodo_a7e69594520d66e138146770a108c3032}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a3da68b47212b6da1bca4c53f54fd9cf1}{
+\hyperlink{class_edda_1_1_ponto}{Ponto} {\bfseries ancora}}
+\label{class_edda_1_1_nodo_a3da68b47212b6da1bca4c53f54fd9cf1}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_aef9595a170e42da4c7332ba2ae46c313}{
+bool {\bfseries visivel}}
+\label{class_edda_1_1_nodo_aef9595a170e42da4c7332ba2ae46c313}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_a46be1d9acc858dba92a238c62b1d589e}{
+\hyperlink{class_edda_1_1_nodo}{Nodo} $\ast$ {\bfseries pai}}
+\label{class_edda_1_1_nodo_a46be1d9acc858dba92a238c62b1d589e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_edda_1_1_nodo_a051ce3dea1c5e7599534824f4dfc2102}{
+map$<$ int, \hyperlink{class_edda_1_1_nodo}{Nodo} $\ast$ $>$ $\ast$ {\bfseries filhos}}
+\label{class_edda_1_1_nodo_a051ce3dea1c5e7599534824f4dfc2102}
+
+\item 
+\hypertarget{class_edda_1_1_nodo_ac95e8bf6a963a5f265dd62a6cb9b4bc0}{
+\hyperlink{class_edda_1_1_ponto}{Ponto} {\bfseries posicao}}
+\label{class_edda_1_1_nodo_ac95e8bf6a963a5f265dd62a6cb9b4bc0}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Nodo.h\item 
+Nodo.cpp\end{DoxyCompactItemize}

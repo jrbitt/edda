@@ -1,0 +1,134 @@
+\hypertarget{class_collision}{
+\section{Collision Class Reference}
+\label{class_collision}\index{Collision@{Collision}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_collision_ae2fac0fb78ba69f8fe0301dedce492be}{PixelPerfectTest} (const sf::Sprite \&Object1, const sf::Sprite \&Object2, sf::Uint8 AlphaLimit=127)
+\item 
+static bool \hyperlink{class_collision_af2f8835beee81b76d04311c794c36c0f}{CircleTest} (const sf::Sprite \&Object1, const sf::Sprite \&Object2)
+\item 
+static bool \hyperlink{class_collision_a6f5945d467e629017010b139062919c6}{BoundingBoxTest} (const sf::Sprite \&Object1, const sf::Sprite \&Object2)
+\item 
+static sf::IntRect \hyperlink{class_collision_afacb4e2c95010ac68c560f437be251aa}{GetAABB} (const sf::Sprite \&Object)
+\item 
+static sf::Vector2f \hyperlink{class_collision_aba800d3b1e206e05fd787d025d41bae9}{RotatePoint} (const sf::Vector2f \&Point, float Angle)
+\item 
+static float \hyperlink{class_collision_aeef6bf21c0f1ebf170df04c1957da0ad}{MinValue} (float a, float b, float c, float d)
+\item 
+static float \hyperlink{class_collision_ab2395ef5aa96a4030d74adbfe5d624fe}{MaxValue} (float a, float b, float c, float d)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_collision_a6f5945d467e629017010b139062919c6}{
+\index{Collision@{Collision}!BoundingBoxTest@{BoundingBoxTest}}
+\index{BoundingBoxTest@{BoundingBoxTest}!Collision@{Collision}}
+\subsubsection[{BoundingBoxTest}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision::BoundingBoxTest (
+\begin{DoxyParamCaption}
+\item[{const sf::Sprite \&}]{ Object1, }
+\item[{const sf::Sprite \&}]{ Object2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_collision_a6f5945d467e629017010b139062919c6}
+Test for bounding box collision using OBB Box. To test against AABB use PixelPerfectTest with AlphaLimit = 0
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_collision_ae2fac0fb78ba69f8fe0301dedce492be}{Collision::PixelPerfectTest} 
+\end{DoxySeeAlso}
+\hypertarget{class_collision_af2f8835beee81b76d04311c794c36c0f}{
+\index{Collision@{Collision}!CircleTest@{CircleTest}}
+\index{CircleTest@{CircleTest}!Collision@{Collision}}
+\subsubsection[{CircleTest}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision::CircleTest (
+\begin{DoxyParamCaption}
+\item[{const sf::Sprite \&}]{ Object1, }
+\item[{const sf::Sprite \&}]{ Object2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_collision_af2f8835beee81b76d04311c794c36c0f}
+Test for collision using circle collision dection Radius is averaged from the dimesnions of the sprite so roughly circular objects will be much more accurate \hypertarget{class_collision_afacb4e2c95010ac68c560f437be251aa}{
+\index{Collision@{Collision}!GetAABB@{GetAABB}}
+\index{GetAABB@{GetAABB}!Collision@{Collision}}
+\subsubsection[{GetAABB}]{\setlength{\rightskip}{0pt plus 5cm}sf::IntRect Collision::GetAABB (
+\begin{DoxyParamCaption}
+\item[{const sf::Sprite \&}]{ Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_collision_afacb4e2c95010ac68c560f437be251aa}
+Generate a Axis-\/Aligned Bounding Box for broad phase of Pixel Perfect detection.
+
+\begin{DoxyReturn}{Returns}
+IntRect to round off Floating point positions. 
+\end{DoxyReturn}
+\hypertarget{class_collision_ab2395ef5aa96a4030d74adbfe5d624fe}{
+\index{Collision@{Collision}!MaxValue@{MaxValue}}
+\index{MaxValue@{MaxValue}!Collision@{Collision}}
+\subsubsection[{MaxValue}]{\setlength{\rightskip}{0pt plus 5cm}float Collision::MaxValue (
+\begin{DoxyParamCaption}
+\item[{float}]{ a, }
+\item[{float}]{ b, }
+\item[{float}]{ c, }
+\item[{float}]{ d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_collision_ab2395ef5aa96a4030d74adbfe5d624fe}
+Helper function to get the maximum from a list of values \hypertarget{class_collision_aeef6bf21c0f1ebf170df04c1957da0ad}{
+\index{Collision@{Collision}!MinValue@{MinValue}}
+\index{MinValue@{MinValue}!Collision@{Collision}}
+\subsubsection[{MinValue}]{\setlength{\rightskip}{0pt plus 5cm}float Collision::MinValue (
+\begin{DoxyParamCaption}
+\item[{float}]{ a, }
+\item[{float}]{ b, }
+\item[{float}]{ c, }
+\item[{float}]{ d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_collision_aeef6bf21c0f1ebf170df04c1957da0ad}
+Helper function to get the minimum from a list of values \hypertarget{class_collision_ae2fac0fb78ba69f8fe0301dedce492be}{
+\index{Collision@{Collision}!PixelPerfectTest@{PixelPerfectTest}}
+\index{PixelPerfectTest@{PixelPerfectTest}!Collision@{Collision}}
+\subsubsection[{PixelPerfectTest}]{\setlength{\rightskip}{0pt plus 5cm}bool Collision::PixelPerfectTest (
+\begin{DoxyParamCaption}
+\item[{const sf::Sprite \&}]{ Object1, }
+\item[{const sf::Sprite \&}]{ Object2, }
+\item[{sf::Uint8}]{ AlphaLimit = {\ttfamily 127}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_collision_ae2fac0fb78ba69f8fe0301dedce492be}
+Test for a pixel perfect collision detection between two Sprites, Rotation and Scale is supported in this test
+
+
+\begin{DoxyParams}{Parameters}
+{\em Object1} & The first sprite \\
+\hline
+{\em Object2} & The second sprite  How opaque a pixel needs to be before a hit it registered \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_collision_aba800d3b1e206e05fd787d025d41bae9}{
+\index{Collision@{Collision}!RotatePoint@{RotatePoint}}
+\index{RotatePoint@{RotatePoint}!Collision@{Collision}}
+\subsubsection[{RotatePoint}]{\setlength{\rightskip}{0pt plus 5cm}sf::Vector2f Collision::RotatePoint (
+\begin{DoxyParamCaption}
+\item[{const sf::Vector2f \&}]{ Point, }
+\item[{float}]{ Angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_collision_aba800d3b1e206e05fd787d025d41bae9}
+Helper function in order to rotate a point by an Angle
+
+Rotation is CounterClockwise in order to match SFML Sprite Rotation
+
+
+\begin{DoxyParams}{Parameters}
+{\em Point} & a Vector2f representing a coordinate \\
+\hline
+{\em Angle} & angle in degrees \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Collision.h\item 
+Collision.cpp\end{DoxyCompactItemize}

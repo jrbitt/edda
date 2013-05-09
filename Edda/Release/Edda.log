@@ -1,0 +1,93 @@
+﻿Build started 08/05/2013 19:41:15.
+     1>Project "D:\Joao\Cursos\OneGameMonth\Game3\Edda\Edda\Edda.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\Edda.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"..\..\SFML-1.6\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D DLLMAIN_EXPORTS /D SFML_DYNAMIC /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D XLIBEGL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Acao.cpp AcaoAnimar.cpp AcaoCallback.cpp AcaoInstantanea.cpp AcaoTemporal.cpp Animacao.cpp Camada.cpp Cena.cpp Colecoes.cpp Collision.cpp Diretor.cpp Grupo.cpp MoverAte.cpp Nodo.cpp Sequencia.cpp Sprite.cpp Tile.cpp TileCache.cpp Tilemap.cpp
+         Acao.cpp
+         AcaoAnimar.cpp
+         AcaoCallback.cpp
+         AcaoInstantanea.cpp
+         AcaoTemporal.cpp
+         Animacao.cpp
+     1>Animacao.cpp(5): warning C4018: '<' : signed/unsigned mismatch
+         Camada.cpp
+     1>Camada.cpp(18): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Camada.cpp(18): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Camada.cpp(19): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Camada.cpp(19): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Cena.cpp
+         Colecoes.cpp
+     1>Colecoes.cpp(15): warning C4018: '<' : signed/unsigned mismatch
+         Collision.cpp
+     1>Collision.cpp(80): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Collision.cpp(118): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Collision.cpp(118): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Collision.cpp(119): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Collision.cpp(119): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Collision.cpp(168): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Collision.cpp(169): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+         Diretor.cpp
+     1>Diretor.cpp(45): warning C4244: 'argument' : conversion from 'float' to 'long', possible loss of data
+     1>Diretor.cpp(48): warning C4244: 'argument' : conversion from 'float' to 'long', possible loss of data
+     1>Diretor.cpp(39): warning C4101: 'delta' : unreferenced local variable
+         Grupo.cpp
+     1>Grupo.cpp(9): warning C4018: '<' : signed/unsigned mismatch
+         MoverAte.cpp
+     1>MoverAte.cpp(16): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>MoverAte.cpp(16): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>MoverAte.cpp(23): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>MoverAte.cpp(24): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         Nodo.cpp
+         Sequencia.cpp
+     1>Sequencia.cpp(10): warning C4018: '<' : signed/unsigned mismatch
+     1>Sequencia.cpp(16): warning C4018: '<' : signed/unsigned mismatch
+         Sprite.cpp
+     1>Sprite.cpp(25): warning C4018: '<' : signed/unsigned mismatch
+     1>Sprite.cpp(26): warning C4018: '<' : signed/unsigned mismatch
+     1>Sprite.cpp(50): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Sprite.cpp(50): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Sprite.cpp(60): warning C4018: '<' : signed/unsigned mismatch
+         Tile.cpp
+         TileCache.cpp
+     1>TileCache.cpp(11): warning C4018: '>=' : signed/unsigned mismatch
+     1>TileCache.cpp(13): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>TileCache.cpp(13): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>TileCache.cpp(78): warning C4018: '>=' : signed/unsigned mismatch
+     1>TileCache.cpp(113): warning C4018: '<' : signed/unsigned mismatch
+         Tilemap.cpp
+     1>Tilemap.cpp(79): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Joao\Cursos\OneGameMonth\Game3\Edda\Release\Edda.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"..\..\SFML-1.6\lib" "sfml-system.lib" "sfml-window.lib" "sfml-graphics.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Edda.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Joao\Cursos\OneGameMonth\Game3\Edda\Release\Edda.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Joao\Cursos\OneGameMonth\Game3\Edda\Release\Edda.lib" /MACHINE:X86 /DLL Release\Acao.obj
+         Release\AcaoAnimar.obj
+         Release\AcaoCallback.obj
+         Release\AcaoInstantanea.obj
+         Release\AcaoTemporal.obj
+         Release\Animacao.obj
+         Release\Camada.obj
+         Release\Cena.obj
+         Release\Colecoes.obj
+         Release\Collision.obj
+         Release\Diretor.obj
+         Release\Grupo.obj
+         Release\MoverAte.obj
+         Release\Nodo.obj
+         Release\Sequencia.obj
+         Release\Sprite.obj
+         Release\Tile.obj
+         Release\TileCache.obj
+         Release\Tilemap.obj
+            Creating library D:\Joao\Cursos\OneGameMonth\Game3\Edda\Release\Edda.lib and object D:\Joao\Cursos\OneGameMonth\Game3\Edda\Release\Edda.exp
+         Generating code
+         Finished generating code
+         Edda.vcxproj -> D:\Joao\Cursos\OneGameMonth\Game3\Edda\Release\Edda.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Joao\Cursos\OneGameMonth\Game3\Edda\Release\Edda.dll;#2" /manifest Release\Edda.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\Edda.unsuccessfulbuild".
+         Touching "Release\Edda.lastbuildstate".
+     1>Done Building Project "D:\Joao\Cursos\OneGameMonth\Game3\Edda\Edda\Edda.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:20.37

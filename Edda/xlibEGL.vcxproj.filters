@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Acoes">
+      <UniqueIdentifier>{b358a059-1819-4b51-8c69-a8004ad536ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Acoes">
+      <UniqueIdentifier>{b743baa8-6aa9-4eb1-96db-48fd087ecece}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Diretor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineDll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ponto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tilemap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Acao.h">
+      <Filter>Header Files\Acoes</Filter>
+    </ClInclude>
+    <ClInclude Include="AcaoTemporal.h">
+      <Filter>Header Files\Acoes</Filter>
+    </ClInclude>
+    <ClInclude Include="Animacao.h">
+      <Filter>Header Files\Acoes</Filter>
+    </ClInclude>
+    <ClInclude Include="AcaoAnimar.h">
+      <Filter>Header Files\Acoes</Filter>
+    </ClInclude>
+    <ClInclude Include="MoverAte.h">
+      <Filter>Header Files\Acoes</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequencia.h">
+      <Filter>Header Files\Acoes</Filter>
+    </ClInclude>
+    <ClInclude Include="Grupo.h">
+      <Filter>Header Files\Acoes</Filter>
+    </ClInclude>
+    <ClInclude Include="Colecoes.h">
+      <Filter>Header Files\Acoes</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Edda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Diretor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cena.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tilemap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Acao.cpp">
+      <Filter>Source Files\Acoes</Filter>
+    </ClCompile>
+    <ClCompile Include="AcaoTemporal.cpp">
+      <Filter>Source Files\Acoes</Filter>
+    </ClCompile>
+    <ClCompile Include="Animacao.cpp">
+      <Filter>Source Files\Acoes</Filter>
+    </ClCompile>
+    <ClCompile Include="AcaoAnimar.cpp">
+      <Filter>Source Files\Acoes</Filter>
+    </ClCompile>
+    <ClCompile Include="MoverAte.cpp">
+      <Filter>Source Files\Acoes</Filter>
+    </ClCompile>
+    <ClCompile Include="Sequencia.cpp">
+      <Filter>Source Files\Acoes</Filter>
+    </ClCompile>
+    <ClCompile Include="Grupo.cpp">
+      <Filter>Source Files\Acoes</Filter>
+    </ClCompile>
+    <ClCompile Include="Colecoes.cpp">
+      <Filter>Source Files\Acoes</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
