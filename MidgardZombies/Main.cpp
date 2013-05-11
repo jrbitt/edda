@@ -25,19 +25,14 @@ int main(int argc, char** argv)
 
 	Animacao baixoZombie;
 	baixoZombie.sprite = &zombie;
-	baixoZombie.adicionarFrames(0,2);
+	baixoZombie.adicionarFrame(new Frame(3,1000));
+	baixoZombie.adicionarFrame(new Frame(4,1000));
+	baixoZombie.adicionarFrame(new Frame(5,1000));
 	
 	AcaoAnimar andarPraBaixo(&baixoZombie);
 	MoverAte mover(400,400,3000);
-	MoverAte mover2(0,400,3000);
 
-	Sequencia seq;	
-	Grupo g;
-
-	g.adicionar(&andarPraBaixo);
-	g.adicionar(&mover2);
-	
-	seq.adicionar(&g);
+	Sequencia seq;		
 	seq.adicionar(&andarPraBaixo);
 	seq.adicionar(&mover);
 

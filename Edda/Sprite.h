@@ -35,9 +35,9 @@ using namespace std;
 namespace Edda{
 class DLLMAIN_API Sprite: public Nodo{
 private:
-	vector<sf::Image*> img;
-	sf::Sprite* _sprite;
-	vector<sf::Image*>::iterator current;
+	vector<sf::IntRect*> *rect;
+	sf::Sprite _sprite;
+	sf::Image imageSource;
 	int pos;
 
 public:
@@ -47,7 +47,7 @@ public:
 	void carregarImagem(string,int,int);
 	void desenhar(sf::RenderWindow *);
 	void setPosicao(int,int);
-	sf::Image* getFrame(int);
+	//sf::Image* getFrame(int);
 	void setFrame(int);
 	bool colidir(Sprite *s, bool pixel=true);
 	

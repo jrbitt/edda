@@ -5,36 +5,26 @@
 
 namespace Edda{
 Sprite::Sprite(): Nodo(){
-	current = img.begin();
+	rect = new vector<sf::IntRect*>;
+	//current = img->begin();
 	pos =0;
 }
 
 void Sprite::carregarImagem(string filename){	
-	sf::Image tmp;
-	tmp.LoadFromFile(filename);
-	if(img.empty()){				
-		_sprite = new sf::Sprite(tmp);
-	}				
-	img.push_back(&tmp);
-	current = img.begin();
+	imageSource.LoadFromFile(filename);			
+	_sprite.SetImage(imageSource);
+	//current = img->begin();
 }
 
 void Sprite::carregarImagem(string filename,int larg,int alt){
-	sf::Image tmp;
-	if(tmp.LoadFromFile(filename)){
-		for(int y=0; y<tmp.GetHeight(); y+=alt){
-			for(int x=0; x<tmp.GetWidth(); x+=larg){
-				Image *temp2 = new Image;
-				temp2->Create(larg,alt);
-				temp2->Copy(tmp,0,0,IntRect(x,y,larg,alt),false);
-
-				if(img.empty()){				
-					_sprite = new sf::Sprite(*temp2);
-				}				
-				img.push_back(temp2);
+	if(imageSource.LoadFromFile(filename)){
+		_sprite.SetImage(imageSource);
+		for(int y=0; y<imageSource.GetHeight(); y+=alt){
+			for(int x=0; x<imageSource.GetWidth(); x+=larg){	
+				IntRect *ir = new IntRect(x,y,larg,alt);							
+				rect->push_back(ir);
 			}
-		}					
-		current = img.begin();
+		}		
 	}
 }
 
@@ -42,33 +32,35 @@ void Sprite::desenhar(sf::RenderWindow *w){
 	//w->Draw(*(*current));
 	//w->Draw(*this->_sprite);
 	//cout << "pintar "<< this << endl;	
-	w->Draw(*this->_sprite);
+	//_sprite->SetImage(NULL);
+	this->_sprite.SetPosition(this->posicao.x,this->posicao.y);
+	w->Draw(_sprite);
 }
 
 void Sprite::setPosicao(int x,int y){
 	Nodo::setPosicao(x,y);	
-	this->_sprite->SetPosition(x,y);
+	this->_sprite.SetPosition(x,y);
 }
 
 void Sprite::setFrame(int i){
-	//std::cout << "set_frame " << this << std::endl;
 	pos = i;
-	this->_sprite->SetImage(*(img[pos]));
+	std::cout << "set_frame " << (rect->at(pos)) << std::endl;
+	_sprite.SetSubRect(*(rect->at(pos)));
 }
 
-sf::Image* Sprite::getFrame(int i){
-	if(i>=0 && i<img.size()){
-		return img[i];
+/*sf::Image* Sprite::getFrame(int i){
+	if(i>=0 && i<img->size()){
+		return &(img->at(i));
 	}
 	else{
 		return NULL;
 	}
-}
+}*/
 
 bool Sprite::colidir(Sprite *s, bool pixel){
-	if(Collision::BoundingBoxTest(*(this->_sprite),*(s->_sprite))){
+	if(Collision::BoundingBoxTest((this->_sprite),(s->_sprite))){
 		if(pixel){
-			return Collision::PixelPerfectTest(*(this->_sprite),*(s->_sprite));
+			return Collision::PixelPerfectTest((this->_sprite),(s->_sprite));
 		}
 		else{
 			return true;
