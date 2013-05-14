@@ -25,9 +25,7 @@ int main(int argc, char** argv)
 
 	Animacao baixoZombie;
 	baixoZombie.sprite = &zombie;
-	baixoZombie.adicionarFrame(new Frame(3,1000));
-	baixoZombie.adicionarFrame(new Frame(4,1000));
-	baixoZombie.adicionarFrame(new Frame(5,1000));
+	baixoZombie.adicionarFrames(3,5);
 	
 	AcaoAnimar andarPraBaixo(&baixoZombie);
 	MoverAte mover(400,400,3000);

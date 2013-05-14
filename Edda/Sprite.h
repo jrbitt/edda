@@ -47,7 +47,6 @@ public:
 	void carregarImagem(string,int,int);
 	void desenhar(sf::RenderWindow *);
 	void setPosicao(int,int);
-	//sf::Image* getFrame(int);
 	void setFrame(int);
 	bool colidir(Sprite *s, bool pixel=true);
 	
