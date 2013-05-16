@@ -1,3 +1,17 @@
+------------
+Mai. 16 2013
+------------
+Não é preciso mais fazer o download da SFML 1.6
+Já vem com uma versão compacta e as DLLs/libs para
+o Visual Studio C++ 2010.
+
+Projeto para o MVSC++ 2010
+
+No momento aind só compila no modo Release.
+
+------------
+Initial
+------------
 É necessário fazer o download da SFML 1.6
 A estrutura de diretórios deverá ficar da seguinte forma:
 

@@ -1,144 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Tilemap.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Camada.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Cena.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Collision.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Diretor.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Nodo.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Tile.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="TileCache.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Acao.cpp">
-      <Filter>Source\Acoes</Filter>
-    </ClCompile>
-    <ClCompile Include="AcaoAnimar.cpp">
-      <Filter>Source\Acoes</Filter>
-    </ClCompile>
-    <ClCompile Include="AcaoTemporal.cpp">
-      <Filter>Source\Acoes</Filter>
-    </ClCompile>
-    <ClCompile Include="Animacao.cpp">
-      <Filter>Source\Acoes</Filter>
-    </ClCompile>
-    <ClCompile Include="MoverAte.cpp">
-      <Filter>Source\Acoes</Filter>
-    </ClCompile>
-    <ClCompile Include="Sequencia.cpp">
-      <Filter>Source\Acoes</Filter>
-    </ClCompile>
-    <ClCompile Include="Grupo.cpp">
-      <Filter>Source\Acoes</Filter>
-    </ClCompile>
-    <ClCompile Include="Colecoes.cpp">
-      <Filter>Source\Acoes</Filter>
-    </ClCompile>
-    <ClCompile Include="AcaoInstantanea.cpp">
-      <Filter>Source\Acoes</Filter>
-    </ClCompile>
-    <ClCompile Include="AcaoCallback.cpp">
-      <Filter>Source\Acoes</Filter>
-    </ClCompile>
+    <None Include="Doxyfile" />
+    <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camada.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Cena.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Collision.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Cor.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DefineDll.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Diretor.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Edda.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Nodo.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Ponto.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Tilemap.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Acao.h">
-      <Filter>Header\Acoes</Filter>
-    </ClInclude>
-    <ClInclude Include="AcaoAnimar.h">
-      <Filter>Header\Acoes</Filter>
-    </ClInclude>
-    <ClInclude Include="AcaoTemporal.h">
-      <Filter>Header\Acoes</Filter>
-    </ClInclude>
-    <ClInclude Include="Animacao.h">
-      <Filter>Header\Acoes</Filter>
-    </ClInclude>
-    <ClInclude Include="MoverAte.h">
-      <Filter>Header\Acoes</Filter>
-    </ClInclude>
-    <ClInclude Include="Sequencia.h">
-      <Filter>Header\Acoes</Filter>
-    </ClInclude>
-    <ClInclude Include="Grupo.h">
-      <Filter>Header\Acoes</Filter>
-    </ClInclude>
-    <ClInclude Include="Colecoes.h">
-      <Filter>Header\Acoes</Filter>
-    </ClInclude>
-    <ClInclude Include="AcaoCallback.h">
-      <Filter>Header\Acoes</Filter>
-    </ClInclude>
-    <ClInclude Include="AcaoInstantanea.h">
-      <Filter>Header\Acoes</Filter>
-    </ClInclude>
+    <ClCompile Include="Acao.cpp" />
+    <ClCompile Include="AcaoAnimar.cpp" />
+    <ClCompile Include="AcaoCallback.cpp" />
+    <ClCompile Include="AcaoInstantanea.cpp" />
+    <ClCompile Include="AcaoTemporal.cpp" />
+    <ClCompile Include="Animacao.cpp" />
+    <ClCompile Include="Camada.cpp" />
+    <ClCompile Include="Cena.cpp" />
+    <ClCompile Include="Colecoes.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="Diretor.cpp" />
+    <ClCompile Include="Grupo.cpp" />
+    <ClCompile Include="MoverAte.cpp" />
+    <ClCompile Include="Nodo.cpp" />
+    <ClCompile Include="Sequencia.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="TileCache.cpp" />
+    <ClCompile Include="Tilemap.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header">
-      <UniqueIdentifier>{e3147018-6291-49cb-8477-8100556f7f27}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source">
-      <UniqueIdentifier>{10e81b63-db65-46e2-b93b-20435f172e36}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header\Acoes">
-      <UniqueIdentifier>{cf42ebf1-ebb0-415c-82f8-69169901c444}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Acoes">
-      <UniqueIdentifier>{de0610d5-1dc0-4c6c-8bbb-87848188eba7}</UniqueIdentifier>
-    </Filter>
+    <ClInclude Include="Acao.h" />
+    <ClInclude Include="AcaoAnimar.h" />
+    <ClInclude Include="AcaoCallback.h" />
+    <ClInclude Include="AcaoInstantanea.h" />
+    <ClInclude Include="AcaoTemporal.h" />
+    <ClInclude Include="Animacao.h" />
+    <ClInclude Include="Camada.h" />
+    <ClInclude Include="Cena.h" />
+    <ClInclude Include="Colecoes.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="Cor.h" />
+    <ClInclude Include="DefineDll.h" />
+    <ClInclude Include="Diretor.h" />
+    <ClInclude Include="Edda.h" />
+    <ClInclude Include="Grupo.h" />
+    <ClInclude Include="MoverAte.h" />
+    <ClInclude Include="Nodo.h" />
+    <ClInclude Include="Ponto.h" />
+    <ClInclude Include="Sequencia.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Tilemap.h" />
   </ItemGroup>
 </Project>
